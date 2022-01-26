@@ -1,6 +1,18 @@
 # Trainline Library
 
-If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. Good luck! :)
+If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. 
+
+Please ensure you read the notes below before getting stuck into 
+
+Good luck! :)
+
+## Notes
+
+- You may utilise any libraries and frameworks you wish to achieve the business scenario above. 
+- Please ensure though that you don't prepare any code in advance, we would like to see you work on this exercise from scratch during the interview call :)
+- A blank Visual Studio solution is [provided here in the repo](/solution) if you would like to use it. It is completely optional to use this; and you can start from scratch on the day if you prefer.
+
+---
 
 ## Scenario
 
@@ -33,9 +45,3 @@ This API needs to follow the standard RESTful pattern and allow for the followin
 For now, while the application is being tested, the library only wants to store their book records in memory, but, in future they will likely want to swap memory storage for another more permanent storage solution.
 
 Please implement a RESTful API service that will enable the above scenarios.
-
----
-
-## Notes
-- You may utilise any libraries and frameworks you wish to achieve the business scenario above. 
-- Please ensure though that you don't prepare any code in advance, we would like to see you work on this exercise from scratch during the interview call :) 

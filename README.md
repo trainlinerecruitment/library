@@ -1,6 +1,6 @@
 If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. 
 
-Please ensure you read the notes below before getting stuck into 
+<u>**Please ensure you read the notes below before start thinking about the scenario**</u>
 
 Good luck! :)
 

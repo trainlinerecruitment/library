@@ -1,5 +1,3 @@
-# Trainline Library
-
 If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. 
 
 Please ensure you read the notes below before getting stuck into 
@@ -10,7 +8,7 @@ Good luck! :)
 
 - You may utilise any libraries and frameworks you wish to achieve the business scenario above. 
 - Please ensure though that you don't prepare any code in advance, we would like to see you work on this exercise from scratch during the interview call :)
-- A blank Visual Studio solution is [provided here in the repo](/solution) if you would like to use it. It is completely optional to use this; and you can start from scratch on the day if you prefer.
+- A blank Visual Studio solution is [provided here in the repo](https://github.com/trainlinerecruitment/library/tree/main/solution) if you would like to use it. It is completely optional to use this; and you can start from scratch on the day if you prefer.
 
 ---
 

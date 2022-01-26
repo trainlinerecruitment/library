@@ -26,7 +26,8 @@ This API needs to follow the standard RESTful pattern and allow for the followin
 - `Book` `Id`'s stored in our library must be unique. The format/structure of this `Id` is completely up to you.
 - All fields on a `Book` cannot be `null` or `empty`
 - All `Date of publication`s must be in the past
-- `Book` `Author`s must have at least one name _Example: Prince | Prince Edward | Prince Edward VII_
+- `Book` `Author`s must have at least one name 
+   - _Example: Prince || Prince Edward || Prince Edward VII_
 - If a request is invalid, all fields that are invalid should be reported back to the requestor.
 
 For now, while the application is being tested, the library only wants to store their book records in memory, but, in future they will likely want to swap memory storage for another more permanent storage solution.

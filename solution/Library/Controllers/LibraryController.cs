@@ -1,21 +1,24 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
-namespace Library.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class LibraryController : ControllerBase
+namespace Library.Controllers
 {
-    private readonly ILogger<LibraryController> _logger;
-
-    public LibraryController(ILogger<LibraryController> logger)
+    [ApiController]
+    [Route("[controller]")]
+    public class LibraryController : ControllerBase
     {
-        _logger = logger;
-    }
+        private readonly ILogger<LibraryController> _logger;
 
-    [HttpGet]
-    public void Get()
-    {
-        throw new NotImplementedException();
+        public LibraryController(ILogger<LibraryController> logger)
+        {
+            _logger = logger;
+        }
+
+        [HttpGet]
+        public void Get()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

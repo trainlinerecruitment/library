@@ -9,6 +9,7 @@ Good luck! :)
 - You may utilise any libraries and frameworks you wish to achieve the business scenario above. 
 - Please ensure though that you don't prepare any code in advance, we would like to see you work on this exercise from scratch during the interview call :)
 - A blank Visual Studio solution is [provided here in the repo](https://github.com/trainlinerecruitment/library/tree/main/solution) if you would like to use it. It is completely optional to use this; and you can start from scratch on the day if you prefer.
+- We would like you approach this problem with a "Production Mindset"; think about how you would solve this problem as you would any production code/system.
 
 ---
 

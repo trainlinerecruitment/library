@@ -1,5 +1,3 @@
-# Room Availability Service - Technical Test
-
 If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. 
 
 <u>**Please ensure you read the notes below before start thinking about the scenario**</u>
@@ -17,78 +15,32 @@ Good luck! :)
 
 ## Scenario
 
-We have been tasked with implementing a room booking/availability service as a simple RESTful API. A rooms availability is obtained by calling an external service, which for the purposes of this exercise will be emulated by making HTTP requests to a file accessible on GitHub.
+A library is wanting to build a new API for book management. The API we are building is to allow the library to store details about unique books that the library contains, it will not contain multiple entries for the same book (here 'same book' means duplicated Id).
 
-An example `room availability response` consists of a json object containing daily availability attributes; each consisting of 48 characters (`1` or `0`).
+A book is a very simple data structure that contains the following fields:
+- Id
+- Title
+- Author
+- Date of publication
 
- Example:
- ```json
- {
-   "availability": {
-       "monday": "000000000011111111110011100010100011101010110100",
-       "tuesday": "000001100111100011110011111110100011101111110100",
-       "wednesday": "000000000011111111110000000000000000001010000100",
-       "thursday": "000000000011100111110011100011111111101010110100",
-       "friday": "000000000011100101110010011111101110011111101100",
-     }
- }
- ```
+### Functionality Required
 
- This file structure shows:
- - The first character for a days schedule indicates `00:00` or "midnight"
- - Each character represents a 30 min time slot of the day
- - The last character for a days schedule indicates `23:30`
- - If a character is `0` the room is free for that 30 min window
- - If a character is `1` the room is booked for that 30 min window
- - So for the example room above `Monday` the room is first booked at `05:00` until `10:00`
- - There is no entry for Saturday or Sunday as these are not valid days to use meeting rooms.
+This API needs to follow the standard RESTful pattern and allow for the following operations to take place:
 
----
+- Add a new book to the library
+- Remove an existing book from the library using its `Id`
+- Update an existing book in the library using its `Id`
+- Get a book by its `Id`
+- Get all books in the Library
 
-## Your Task
+### Business Rules
+- `Book` `Id`'s stored in our library must be unique. The format/structure of this `Id` is completely up to you.
+- All fields on a `Book` cannot be `null` or `empty`
+- All `Date of publication`s must be in the past
+- `Book` `Author`s must have at least one name 
+   - _Example: `Prince` or `Prince Edward` or `Prince Edward VII`_
+- If a request is invalid, all fields that are invalid should be reported back to the requestor.
 
- Create an API that allows users to query the upstream booking service. Your API needs to implement the following API actions:
- - Provide a mechanism to retrieve the availability for a room for a given `day of the week`. 
- - The `day of the week` can be specified in numerical format (`1 == Monday, 2 == Tuesday` etc.) or in string format (`Monday, Tuesday` etc.)
- - Provide a mechanism to retrieve the availability for a room for all days of the week.
- - Provide a mechanism to retrieve the availability for a room for a specific `day of the week`.
- - Provide a mechanism to check if a room is free on a specific `day of the week` and `time of day` for a specified `duration in minutes`.
- - If a request is made for an invalid day or time then an appropriate response should be returned.
- - We have identified that the real availability service has stability issues, when making external calls we need to ensure we have resilience implemented.
- - When returning your response we require a human readable format. This format is up to you, but an example is shown below:
-  ```json
-  {
-      "room": "xyz",
-      "schedule": [
-          {
-            "day": "monday",
-            "availability": {
-                "00:00": false,
-                "00:30": false,
-                "01:00": false
-                ...
-            }
-          },
-          {
-              "day": "tuesday",
-              "availability": {
-                "00:00": true,
-                "00:30": true,
-                "01:00": true
-                ...
-            }
-          }
-      ]
-  }
-  ```
+For now, while the application is being tested, the library only wants to store their book records in memory, but, in future they will likely want to swap memory storage for another more permanent storage solution.
 
-## Notes
-
- For the purpose of this exercise:
- - You can [utilize the example room availability file located here](https://raw.githubusercontent.com/trainlinerecruitment/room-booking/main/availability.json) for all room availabilities; hosted on GitHub.
-   - For now we are using a dummy file on GitHub, but eventually we must be able to easily swap the uri to a real endpoint.
- - Your api design needs to enable querying availability per `room name` but for this exercise assume all rooms will use/have the same availability.
- - The physical date is not important, you can assume every week the schedule is the same for all rooms, only the `day of the week` is required for requests.
- - When showing the room availability in responses, it should be rendered in 30 min increments.
-
- Please implement a RESTful API service that will enable all the above scenarios.
+Please implement a RESTful API service that will enable the above scenarios.

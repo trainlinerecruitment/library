@@ -1,14 +1,18 @@
+# Library Book Service - Technical Test
+
 If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. 
 
 <u>**Please ensure you read the notes below before start thinking about the scenario**</u>
 
-Good luck! :)
+Good luck! 🙂
 
-## Notes
+### Notes
 
-- You may utilise any libraries and frameworks you wish to achieve the business scenario above. 
-- Please ensure though that you don't prepare any code in advance, we would like to see you work on this exercise from scratch during the interview call :)
-- A blank Visual Studio solution is [provided here in the repo](https://github.com/trainlinerecruitment/library/tree/main/solution) if you would like to use it. It is completely optional to use this; and you can start from scratch on the day if you prefer.
+- You may utilise any libraries and frameworks you wish to achieve the business scenario above.
+- The purpose of this exercise is NOT to get to the end, but instead it is for you to show us your coding, problem solving and communication skills.
+- Please don't prepare any code in advance - we would like to see you work on this exercise from scratch during the interview call 🙂
+- Optional "starter solutions" are [provided here for candidates](https://github.com/trainlinerecruitment/starter-solution-csharp) if you would like to clone and use them please do - This is completely optional; and you can start from scratch with `File > New` on the day if you prefer.
+- We would like you approach this problem with a **"Production Mindset"**; think about how you would solve this problem as you would any production code/system.
 
 ---
 

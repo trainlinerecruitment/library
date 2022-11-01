@@ -1,18 +1,27 @@
 # Library Book Service - Technical Test
 
-If you are here it's probably because you applied for a Software Engineering role at Trainline. This repo describes the problem statement you will be tackling during the actual interview. 
+## Introduction
 
-<u>**Please ensure you read the notes below before start thinking about the scenario**</u>
+Welcome to the Trainline 2nd Round Interview - Tech Test. 
 
-Good luck! 🙂
+This will be a 90 minute pair programming style exercise in which you will attempt to solve the scenario below, but, <u>before you do here are a few guidelines to help guide you and ensure you can do your best on the day, so please read them carefully</u> 🙂
 
-### Notes
+1. The test is designed to be open ended, by which we mean you are free to tackle it in any way you see fit.
+1. We ask that you tackle this test as you would any code you were writing for a production system - Example: best practices vs hacking.
+1. The purpose of this exercise is not to get to the end, but to show us the process you use to get there. We are trying to assess not only how you code but also the thought process you follow to get to the solution.
+1. Traits we love to see from candidates include, but are not limited to, the following: 
+    - Good programming practices
+    - Good use of patterns
+    - Thinking about testability of code
+    - Good api design
+    - Use of modern framework/language features
+1. This **is not a closed book** test, you are free to Google search or Stack Overflow any answers you need.
+1. You may use any OSS packages/nuget code you wish
+1. We would prefer you not to prepare any code ahead of time, because we want to pair with you and see how you think/solve problems, but we appreciate that this can be stressful so if you wish to spend time outside the interview to prep then please do so; but please remember we don't expect it because your time is valuable.
+1. You are free to use any IDE you wish, and if you would like a blank solution to bootstrap your work, [you can find one here to download/clone](https://github.com/trainlinerecruitment/starter-solution-csharp)
+1. Have fun, we want you to enjoy this experience, your interviewers will be on hand to help you, use them like a coding buddy.
 
-- You may utilise any libraries and frameworks you wish to achieve the business scenario above.
-- The purpose of this exercise is NOT to get to the end, but instead it is for you to show us your coding, problem solving and communication skills.
-- Please don't prepare any code in advance - we would like to see you work on this exercise from scratch during the interview call 🙂
-- Optional "starter solutions" are [provided here for candidates](https://github.com/trainlinerecruitment/starter-solution-csharp) if you would like to clone and use them please do - This is completely optional; and you can start from scratch with `File > New` on the day if you prefer.
-- We would like you approach this problem with a **"Production Mindset"**; think about how you would solve this problem as you would any production code/system.
+Good luck! 😃
 
 ---
 

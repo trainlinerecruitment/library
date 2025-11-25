@@ -18,7 +18,9 @@ This will be a 90 minute pair programming style exercise in which you will attem
 1. This **is not a closed book** test, you are free to Google search or Stack Overflow any answers you need.
 1. You may use any OSS packages/nuget code you wish
 1. We would prefer you not to prepare any code ahead of time, because we want to pair with you and see how you think/solve problems, but we appreciate that this can be stressful so if you wish to spend time outside the interview to prep then please do so; but please remember we don't expect it because your time is valuable.
-1. You are free to use any IDE you wish, and if you would like a blank solution to bootstrap your work, [you can find one here to download/clone](https://github.com/trainlinerecruitment/starter-solution-csharp)
+1. You are free to use any IDE you wish, and if you would like a blank solution to bootstrap your work:
+	- [C# Starter Solution](https://github.com/trainlinerecruitment/starter-solution-csharp)
+	- [Ruby Starter Solution](https://github.com/trainlinerecruitment/starter-solution-ruby)
 1. Have fun, we want you to enjoy this experience, your interviewers will be on hand to help you, use them like a coding buddy.
 
 Good luck! 😃
